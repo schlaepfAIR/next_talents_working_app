@@ -11,6 +11,7 @@ import 'package:next_talents_working_app/home/pages/register_page.dart';
 import 'package:next_talents_working_app/home/pages/how_it_works_page.dart'
     as how;
 import 'package:next_talents_working_app/home/pages/bewerber_profil_page.dart';
+
 import 'package:next_talents_working_app/home/pages/login_page.dart';
 
 void main() async {
