@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LinkedIn Redirect</title>
+    <script>
+      window.onload = function () {
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const state = params.get('state');
+
+        if (code && state) {
+          const flutterRoute = `/#/bewerberProfil?code=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`;
+          window.location.replace(flutterRoute);
+        } else {
+          window.location.replace('/');
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <p>LinkedIn Login erfolgreich. Weiterleitung...</p>
+  </body>
+</html>
